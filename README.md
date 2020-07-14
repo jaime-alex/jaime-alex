@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-My I'm a software engineer passionate for mobile, microservices and web development, 
+I'm a software engineer passionate for mobile, microservices and web development.
 
 
 - 🔭 I’m currently working on build a Xamarin library to convert an image to a pdf
