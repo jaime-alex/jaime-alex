@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-I'm a software engineer passionate for mobile, microservices and web development.
+I'm a software engineer focused on microservices, web development and the cloud.
 
 
-- 🔭 I’m currently working on build a Xamarin library to convert an image to a pdf
+- 🔭 I’m currently working on build a market place web site using react + expressjs, also I'm using vercel as a web hosting and AWS lambdas and dynamodb
 - 🌱 I’m currently learning more about algorithms and big-o notation with python
-- 💬 Ask me about ASP.NET Core, Xamarin Forms, AngularJS and Angular >=2
+- 💬 Ask me about ASP.NET Core, NodeJS, typescript, ReactJS
 - 📫 How to reach me: jaime-alex@outlook.com
