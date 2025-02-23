@@ -21,7 +21,6 @@ import background from '../assets/background.svg';
 				<p>Software engineer focused on web development including microservices, lately I have been learning about machine-learning, NLP's and LLM's</p>
 			</section>
 			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
 				<a href="https://astro.build/chat"
 					><img src={githubLogo.src} height="24" />
 				</a>
@@ -29,6 +28,12 @@ import background from '../assets/background.svg';
 					><img src={linkedinLogo.src} height="24" />
 				</a>
 			</section>
+			<div class="carousel-container" style="margin: 10px;">
+				<div class="carousel" id="carousel">
+					<div>Python</div>
+					<div>JavaScript</div>
+				</div>
+			</div>
 		</section>
 	</main>
 </div>
@@ -205,4 +210,51 @@ import background from '../assets/background.svg';
 			line-height: 1.5;
 		}
 	}
+
+	body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+        .carousel-container {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: scrollLoop 10s linear infinite;
+        }
+        .carousel div {
+            min-width: 150px;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        @keyframes scrollLoop {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
 </style>
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+            const carousel = document.querySelector(".carousel");
+            const items = Array.from(carousel.children);
+            items.forEach(item => {
+                let clone = item.cloneNode(true);
+                carousel.appendChild(clone);
+            });
+        });
+</script>
