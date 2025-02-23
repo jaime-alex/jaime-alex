@@ -1,24 +1,32 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import githubLogo from '../assets/github-mark.svg'
-import linkedinLogo from '../assets/linkedin-mark.png'
-import gmailLogo from '../assets/gmail-logo.svg'
-import background from '../assets/background.svg';
+import astroLogo from "../assets/astro.svg";
+import githubLogo from "../assets/github-mark.svg";
+import linkedinLogo from "../assets/linkedin-mark.png";
+import gmailLogo from "../assets/gmail-logo.svg";
+import background from "../assets/background.svg";
 ---
 
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main>
 		<section id="hero">
-			<h1 id="name">
-				Jaime Alejandro Sanchez
-			</h1>
+			<h1 id="name">Jaime Alejandro Sanchez</h1>
 			<section style="padding: 5px 0 20px 0; display: flex;">
-				<img src={gmailLogo.src} style="height: 24px; margin-right: 10px;"/>
-				<p><a href="mailto:jaimealex.dev@gmail.com">jaimealex.dev@gmail.com</a></p>
+				<img
+					src={gmailLogo.src}
+					style="height: 24px; margin-right: 10px;"
+				/>
+				<p>
+					<a href="mailto:jaimealex.dev@gmail.com"
+						>jaimealex.dev@gmail.com</a>
+				</p>
 			</section>
 			<section style="padding: 5px 0 20px 0;">
-				<p>Software engineer focused on web development including microservices, lately I have been learning about machine-learning, NLP's and LLM's</p>
+				<p>
+					Software engineer focused on web development including
+					microservices, lately I have been learning about
+					machine-learning, NLP's and LLM's
+				</p>
 			</section>
 			<section id="links">
 				<a href="https://astro.build/chat"
@@ -28,10 +36,21 @@ import background from '../assets/background.svg';
 					><img src={linkedinLogo.src} height="24" />
 				</a>
 			</section>
-			<div class="carousel-container" style="margin: 10px;">
-				<div class="carousel" id="carousel">
+			<div class="carousel-container">
+				<div class="carousel">
 					<div>Python</div>
 					<div>JavaScript</div>
+					<div>Java</div>
+					<div>C++</div>
+					<div>Kotlin</div>
+					<div>Swift</div>
+					<!-- Duplicated items for smooth looping -->
+					<div>Python</div>
+					<div>JavaScript</div>
+					<div>Java</div>
+					<div>C++</div>
+					<div>Kotlin</div>
+					<div>Swift</div>
 				</div>
 			</div>
 		</section>
@@ -50,14 +69,15 @@ import background from '../assets/background.svg';
 	}
 
 	#name {
-		background: #1A8ADF;
-		background: linear-gradient(to right, #1A8ADF 0%, #29C17A 100%);
+		background: #1a8adf;
+		background: linear-gradient(to right, #1a8adf 0%, #29c17a 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
 	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova",
+			"Nimbus Sans", Arial, sans-serif;
 		height: 100%;
 	}
 
@@ -118,8 +138,8 @@ import background from '../assets/background.svg';
 	}
 
 	pre {
-		font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
-			'DejaVu Sans Mono', monospace;
+		font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+			Consolas, "DejaVu Sans Mono", monospace;
 		font-weight: normal;
 		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
 		-webkit-background-clip: text;
@@ -147,7 +167,8 @@ import background from '../assets/background.svg';
 		display: inline-block;
 		background:
 			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%)
+				border-box;
 		border-radius: 8px;
 		border: 1px solid transparent;
 		padding: 6px 8px;
@@ -212,49 +233,51 @@ import background from '../assets/background.svg';
 	}
 
 	body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            overflow: hidden;
-        }
-        .carousel-container {
-            width: 300px;
-            overflow: hidden;
-            position: relative;
-        }
-        .carousel {
-            display: flex;
-            gap: 20px;
-            width: max-content;
-            animation: scrollLoop 10s linear infinite;
-        }
-        .carousel div {
-            min-width: 150px;
-            padding: 10px;
-            background: #3498db;
-            color: white;
-            text-align: center;
-            border-radius: 10px;
-            font-size: 18px;
-        }
-        @keyframes scrollLoop {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #f4f4f4;
+		overflow: hidden;
+	}
+
+	.carousel-container {
+		width: 500px;
+		border-radius: 5px;
+		overflow: hidden;
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.carousel {
+		display: flex;
+		gap: 20px;
+		width: max-content;
+		animation: scrollLoop 10s linear infinite;
+	}
+
+	.carousel div {
+		min-width: 150px;
+		padding: 10px;
+		text-align: center;
+		font-size: 18px;
+		color: white;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		box-shadow:
+			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+		border-radius: 10px;
+	}
+
+	@keyframes scrollLoop {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(
+				calc(-50% - 10px)
+			); /* Offset to prevent gap */
+		}
+	}
 </style>
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-            const carousel = document.querySelector(".carousel");
-            const items = Array.from(carousel.children);
-            items.forEach(item => {
-                let clone = item.cloneNode(true);
-                carousel.appendChild(clone);
-            });
-        });
-</script>
