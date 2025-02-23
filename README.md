@@ -8,4 +8,4 @@ I'm a software engineer focused on microservices, web development and the cloud.
 - 💬 Ask me about ASP.NET Core, NodeJS, typescript, ReactJS
 - 📫 How to reach me: jaime-alex@outlook.com
 
-Take a look on my portfolio (click here)[https://jaime-alex.github.io/jaime-alex/]
+Take a look on my portfolio [click here](https://jaime-alex.github.io/jaime-alex/)
